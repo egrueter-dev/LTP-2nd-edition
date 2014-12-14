@@ -317,18 +317,56 @@ puts i_am_chris && i_eat_rocks
 #puts names [4]
 
 languages = ['English', 'Norwegian', 'Ruby']
-
-languages.each do |lang|
-	puts 'I love '+ lang + '!'
+	languages.each do |lang|
+	puts 'I love ' + lang + '!'
 	puts 'Don\'t you?'
 end
+
 
 2.times do 
 	puts '...you can say that again...'
 end
 
+foods = ['artichoke', 'brioche', 'caramel']
+
+puts foods
+puts
+puts foods.to_s
+puts
+puts foods.join( ' , ')
+puts
+puts foods.join(' :) ') + '  8)'
+
+200.times do 
+	puts []
+end
+
+favorites = []
+favorites.push 'raindrops on roses'
+favorites.push 'whiskey on kittens'
+
+puts favorites[0]
+puts favorites.last
+puts favorites.length
+
+puts favorites.pop
+puts favorites
+puts favorites.length
 
 
+# grandma problem again
+puts "say something to grandma"
+response = gets.chomp
+
+while response != "BYE"
+	if response != response.upcase
+		puts "WHATS THAT, SONNY?"
+		response = gets.chomp
+	elsif response = response.upcase
+		puts "Not Since " + (1930 + rand(21)).to_s
+		response = gets.chomp
+	end
+end
 
 
 
