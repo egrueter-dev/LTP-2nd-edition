@@ -355,22 +355,150 @@ puts favorites.length
 
 
 # grandma problem again
-puts "say something to grandma"
-response = gets.chomp
+# puts "say something to grandma"
+# response = gets.chomp
 
-while response != "BYE"
-	if response != response.upcase
-		puts "WHATS THAT, SONNY?"
-		response = gets.chomp
-	elsif response = response.upcase
-		puts "Not Since " + (1930 + rand(21)).to_s
-		response = gets.chomp
+# while response != "BYE"
+# 	if response != response.upcase
+# 		puts "WHATS THAT, SONNY?"
+# 		response = gets.chomp
+# 	elsif response = response.upcase
+# 		puts "Not Since " + (1930 + rand(21)).to_s
+# 		response = gets.chomp
+# 	end
+# end
+
+
+## Chapter 9 ##
+
+# puts 'Hello and thank you for taking the time to'
+# puts 'help me with this experiment. My experiment'
+# puts 'has to to do with the way people feel about'
+# puts 'Mexican food. Just think about Mexican food'
+# puts 'and try to answer every question honestly'
+# puts 'has nothing to do with bed-wetting'
+# puts
+
+
+# while true
+# 	puts 'Do you like eating tacos?'
+# 	answer = gets.chomp.downcase
+# 	if (answer == 'yes' || answer == 'no')
+# 		break
+# 	else
+# 		puts ' Please answer "yes" or "no" ' 
+# 	end
+# end
+
+# while true
+# 	puts 'Do you like eating burritos?'
+# 	answer = gets.chomp
+# 	if (answer == 'yes' || answer == 'no')
+# 		break
+# 	else
+# 		puts 'Please answer "yes" or No".'
+# 	end
+# end
+
+# while true
+# 	puts 'Do you like eating chimichangas?'
+# 	answer = gets.chomp.downcase
+# 	if (answer == 'yes' || answer == 'no')
+# 		break
+# 	else
+# 		puts 'Please answer "yes" or "no"'
+# 	end
+# end
+
+# puts 'Just a few more '
+
+# while true
+# 	puts 'Do you like eating sopapillas?'
+# 	answer = gets.chomp.downcase
+# 	if (answer == 'yes' || answer == 'no')
+# 		break
+# 	else
+# 		puts 'Please answer "yes or "no:.'
+# 	end
+# end
+
+# def say_moo number_of_moos
+# 	puts 'moooo' * number_of_moos
+
+# end
+
+# say_moo 3
+
+#Variables cannot be defined within methods and then used
+# outside of them. 
+
+# def double_this num
+# 	num_times_2 = num * 2
+# 	puts num.to_s + ' doubled is ' + num_times_2.to_s
+# end
+
+# 	double_this 44
+
+
+# tough_var = 'You can\'t even touch my variable!'
+
+# def little_pest tough_var
+# 	tough_var = nil
+# 	puts 'HAHA! I ruined your variable!'
+# end
+
+# little_pest tough_var
+# puts tough_var
+
+# def say_moo number_of_moos
+# 	puts 'moo' * number_of_moos
+# 	'yellow'
+# end
+
+#say_moo 2
+
+# x = say_moo 2
+# puts '#{say_moo}'
+
+#### Strangeness
+
+def favorite_food name
+	if name == 'Apples'
+		return 'Erik'
 	end
+	if name == 'Earl Grey'
+		puts 'Jean Luc'
+	end
+
+	'what is this?'
+end
+
+favorite_food ('Apples')
+favorite_food ('Earl Grey')
+
+#this is an important exercise## PG.80
+
+def ask question
+	while true
+		puts question
+		reply = gets.chomp.downcase
+
+		if (reply == 'yes' || reply == 'no')
+			if reply == 'yes'
+				answer = true
+			else
+				answer = false
+			end
+			break
+		else
+			puts 'Please answer "Yes" or no "no".'
+		end
+	end
+	answer
 end
 
 
-
-
+######
 
 
 
