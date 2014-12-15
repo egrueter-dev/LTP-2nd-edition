@@ -497,11 +497,21 @@ def ask question
 	answer
 end
 
+## Grandma Problem Again
 
-######
+puts "Say something to Grandma"
+response = gets.chomp
 
 
-
+while response != 'BYE'
+	if response != response.upcase
+		puts "What?"
+		response = gets.chomp
+	else 
+		puts "Not Since " + (1930 + rand(21).to_i).to_s
+		response = gets.chomp
+	end
+end
 
 
 
