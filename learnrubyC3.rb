@@ -478,40 +478,96 @@ favorite_food ('Earl Grey')
 
 #this is an important exercise## PG.80
 
-def ask question
-	while true
-		puts question
-		reply = gets.chomp.downcase
+# def ask(question)
+# 	while true
+# 		puts question
+# 		reply = gets.chomp.downcase
 
-		if (reply == 'yes' || reply == 'no')
-			if reply == 'yes'
-				answer = true
-			else
-				answer = false
-			end
-			break
-		else
-			puts 'Please answer "Yes" or no "no".'
-		end
-	end
-	answer
-end
+# 		if (reply == 'yes' || reply == 'no')
+# 			if reply == 'yes'
+# 				answer = true
+# 			else
+# 				answer = false
+# 			end
+# 			return answer
+# 		else
+# 			puts 'Please answer "Yes" or no "no".'
+# 	end
+# end
+
+# puts ask 'do you like eating tacos?'
+
+#<<<<<<<>>>>>>>#
 
 ## Grandma Problem Again
 
-puts "Say something to Grandma"
-response = gets.chomp
+# puts "Say something to Grandma"
+# response = gets.chomp
 
 
-while response != 'BYE'
-	if response != response.upcase
-		puts "What?"
-		response = gets.chomp
-	else 
-		puts "Not Since " + (1930 + rand(21).to_i).to_s
-		response = gets.chomp
-	end
-end
+# while response != 'BYE'
+# 	if response != response.upcase
+# 		puts "What?"
+# 		response = gets.chomp
+# 	else 
+# 		puts "Not Since " + (1930 + rand(21).to_i).to_s
+# 		response = gets.chomp
+# 	end
+# end
+
+
+# def old_roman_numeral num
+
+#  	if num < 10
+#  		roman = 'I' * num
+#  		roman = roman + 'D' *  (num % 1000 / 500)
+#  	else 
+
+
+# end
+
+# old_roman_numeral 4
+
+# recursion
+
+# def ask_recursive question
+
+# 	puts question
+# 	reply = gets.chomp.downcase
+
+# 	if reply == 'yes'
+# 		true
+# 	elsif reply == 'no'
+# 		false
+# 	else puts 'Please answer "Yes" or "No"'
+# 		ask_recursive question
+# 	end
+# end
+
+# ask_recursive 'What?'
+
+# using recursion to find a factorial - damn i wish I had grey matter. 
+
+ def factorial num
+ 	if num <= 1
+ 		1
+ 	else
+ 		num * factorial(num-1)
+ 	end
+ end
+
+ puts factorial(4)
+
+puts ((4 * 5) * (4 * 3) * (2 * 1))
+
+
+		# 1. 6 * 5
+		# 	2. 5 * 4
+		# 		3. 4 * 3
+		# 		  4. 3 * 2
+		# 		    5. 2 * 1
+		# 		     
+
 
 
 
