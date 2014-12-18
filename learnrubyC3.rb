@@ -1,60 +1,60 @@
 ## Chapter 2 Exercises
 
-puts 1.0 + 2.0
-puts 2.0 * 3.0
-puts 5.0 - 8.0
-puts 9.0 / 2.0
+# puts 1.0 + 2.0
+# puts 2.0 * 3.0
+# puts 5.0 - 8.0
+# puts 9.0 / 2.0
 
-puts 100 * ((0.1 + 1/3) ** 3 * ( 3 * 10 ))
+# puts 100 * ((0.1 + 1/3) ** 3 * ( 3 * 10 ))
 
-puts (365 * 26) * 24 * (60 * 60)
+# puts (365 * 26) * 24 * (60 * 60)
 
-puts (819936000 / 60) / 60 / (24 * 365)
+# puts (819936000 / 60) / 60 / (24 * 365)
 
-## Chapter 3 Exercises
+# ## Chapter 3 Exercises
 
-puts 'I Like' + ' ' + 'Apple Pie'
-puts 12 + 12
-puts '12' + '12'
-puts 'you\'re swell'
+# puts 'I Like' + ' ' + 'Apple Pie'
+# puts 12 + 12
+# puts '12' + '12'
+# puts 'you\'re swell'
 
-## Chapter 4 Variables and Assignments
+# ## Chapter 4 Variables and Assignments
 
-my_string = '...you can say that again...'
-puts my_string
-puts my_string
+# my_string = '...you can say that again...'
+# puts my_string
+# puts my_string
 
-name = 'Anya Christina Emanuella Jenkins Harris'
-puts 'My name is' + name + '.'
-puts 'Wow! ' + name
-puts 'is a really long name!'
+# name = 'Anya Christina Emanuella Jenkins Harris'
+# puts 'My name is' + name + '.'
+# puts 'Wow! ' + name
+# puts 'is a really long name!'
 
-composer = 'Mozart'
-puts composer + 'was "da bomb" in his day.'
+# composer = 'Mozart'
+# puts composer + 'was "da bomb" in his day.'
 
-composer = 'Beethoven'
-puts 'But i prefer' + composer + ', personally.'
+# composer = 'Beethoven'
+# puts 'But i prefer' + composer + ', personally.'
 
-my_own_var = 'just another ' + 'string'
-puts my_own_var
+# my_own_var = 'just another ' + 'string'
+# puts my_own_var
 
-my_own_var = 5 * (1+2)
-puts my_own_var
+# my_own_var = 5 * (1+2)
+# puts my_own_var
 
-## Chapter 5 Mixing It Up
+# ## Chapter 5 Mixing It Up
 
-var1 = 2
-var2 = '5'
-puts var1.to_s + var2
+# var1 = 2
+# var2 = '5'
+# puts var1.to_s + var2
 
-var1 = 2
-var2 = '5'
-puts var1 + var2.to_i
+# var1 = 2
+# var2 = '5'
+# puts var1 + var2.to_i
 
-puts '15'.to_f
-puts '99.999'.to_f
-puts '99'.to_i
-puts 'this is a string'.to_i
+# puts '15'.to_f
+# puts '99.999'.to_f
+# puts '99'.to_i
+# puts 'this is a string'.to_i
 
 #puts "Hi! What is your firstname?"
 #firstname = gets.chomp
@@ -68,22 +68,22 @@ puts 'this is a string'.to_i
 ## Chapter 6 Methods
 
 
-puts('hello'.+ 'world')
-puts((10.*9). + 9)
+# puts('hello'.+ 'world')
+# puts((10.*9). + 9)
 
 
-puts self
+# puts self
 
-var1 = 'stop'
-var2 = 'deliver repaid desserts'
-var3 = '....TCELES B HSUP A Magic Spell'
+# var1 = 'stop'
+# var2 = 'deliver repaid desserts'
+# var3 = '....TCELES B HSUP A Magic Spell'
 
-puts var1.reverse
-puts var2.reverse
-puts var3.reverse
-puts var1
-puts var2
-puts var3
+# puts var1.reverse
+# puts var2.reverse
+# puts var3.reverse
+# puts var1
+# puts var2
+# puts var3
 
 #puts 'What is your full name?'
 #name = gets.chomp
@@ -101,108 +101,108 @@ puts var3
 
 #puts fname.length + mname.length + lname.length
 
-letters = 'aAbBcCdDeE'
-puts letters.upcase
-puts letters.downcase
-puts letters.capitalize
-puts ' a'.capitalize
-puts letters
+# letters = 'aAbBcCdDeE'
+# puts letters.upcase
+# puts letters.downcase
+# puts letters.capitalize
+# puts ' a'.capitalize
+# puts letters
 
 
-line_width = 50
-puts ( 'Old Mother Hubbard'.center(line_width))
-puts ( 'Sat in her cuboard'.center(line_width))
+# line_width = 50
+# puts ( 'Old Mother Hubbard'.center(line_width))
+# puts ( 'Sat in her cuboard'.center(line_width))
 
-line_width = 40
+# line_width = 40
 
-str = '-->text<--'
+# str = '-->text<--'
 
-puts (str.ljust ( line_width))
-puts (str.rjust ( line_width))
+# puts (str.ljust ( line_width))
+# puts (str.rjust ( line_width))
 
-puts "Hey Boss...."
-puts "Boss: What?!?"
-#response = gets.chomp
-#puts "WHADAYA MEAN, " + response.upcase + "??!? Your're fired!"
+# puts "Hey Boss...."
+# puts "Boss: What?!?"
+# #response = gets.chomp
+# #puts "WHADAYA MEAN, " + response.upcase + "??!? Your're fired!"
 
-#6.4 Arithmetic
+# #6.4 Arithmetic
 
-puts 5**2
-puts 5**0.5
-puts 7%3
-puts 365%7
+# puts 5**2
+# puts 5**0.5
+# puts 7%3
+# puts 365%7
 
-puts (5-2).abs
-puts (5-2).abs
+# puts (5-2).abs
+# puts (5-2).abs
 
-puts rand(20)
+# puts rand(20)
 
-puts 'the weatherman said there is a'
-puts rand(101).to_s + '% chance of rain,'
-srand 1976
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts ''
-puts(rand(100))
-srand 1976
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-
-
-puts(Math::PI)
-puts(Math::PI/3)
-puts(Math.cos(Math::PI/3))
-puts(Math.tan(Math::PI/4))
-puts(Math.log(Math::E**2))
-puts((1+ Math.sqrt(5))/2)
+# puts 'the weatherman said there is a'
+# puts rand(101).to_s + '% chance of rain,'
+# srand 1976
+# puts(rand(100))
+# puts(rand(100))
+# puts(rand(100))
+# puts ''
+# puts(rand(100))
+# srand 1976
+# puts(rand(100))
+# puts(rand(100))
+# puts(rand(100))
 
 
-
-#Chapter 7 Flow Control
-
-
-puts 1 > 2
-puts 1 < 2
-
-puts 5 >= 5
-puts 5 <= 4
-puts 1 == 1
-puts 2 != 1
-
-puts 'cat' < 'dog'
-
-#branching
-
-#puts 'Hello, what\'s your name?'
-#name = gets.chomp
-#puts 'Hello, ' + name + '.'
-
-#if name == 'Chris'
-#	puts 'What a lovely name!'
-#end
+# puts(Math::PI)
+# puts(Math::PI/3)
+# puts(Math.cos(Math::PI/3))
+# puts(Math.tan(Math::PI/4))
+# puts(Math.log(Math::E**2))
+# puts((1+ Math.sqrt(5))/2)
 
 
-#puts 'I am a fortune-teller. Tell me your name:'
-#name = gets.chomp
 
-#if name == 'Chris'
-#	puts 'I see great things in your future'
+# #Chapter 7 Flow Control
 
-#else
-#	puts 'Your future is...oh my! Look at the time!'
-#	puts 'I really have to go, sorry!'
-#end
 
-puts 'Hello, and welcome to seventh grade English.'
-puts 'My name is Mrs. Gabbard. And your name is...?'
+# puts 1 > 2
+# puts 1 < 2
 
-#name = gets.chomp
+# puts 5 >= 5
+# puts 5 <= 4
+# puts 1 == 1
+# puts 2 != 1
 
-#if name == name.capitalize
-	puts 'Please take a seat, ' + name + '.'
-#else
+# puts 'cat' < 'dog'
+
+# #branching
+
+# #puts 'Hello, what\'s your name?'
+# #name = gets.chomp
+# #puts 'Hello, ' + name + '.'
+
+# #if name == 'Chris'
+# #	puts 'What a lovely name!'
+# #end
+
+
+# #puts 'I am a fortune-teller. Tell me your name:'
+# #name = gets.chomp
+
+# #if name == 'Chris'
+# #	puts 'I see great things in your future'
+
+# #else
+# #	puts 'Your future is...oh my! Look at the time!'
+# #	puts 'I really have to go, sorry!'
+# #end
+
+# puts 'Hello, and welcome to seventh grade English.'
+# puts 'My name is Mrs. Gabbard. And your name is...?'
+
+# #name = gets.chomp
+
+# #if name == name.capitalize
+# 	puts 'Please take a seat, ' + name + '.'
+# #else
 #	puts name + '? You mean ' + name.capitalize + ' , right?'
 #	puts 'Don\'t you even know how to spell your name??'
 #	reply = gets.chomp
@@ -239,13 +239,13 @@ puts 'My name is Mrs. Gabbard. And your name is...?'
 #	puts 'Yay'
 #end
 
-i_am_chris = true
-i_am_purple = false
-i_like_beer = true
-i_eat_rocks = false
+# i_am_chris = true
+# i_am_purple = false
+# i_like_beer = true
+# i_eat_rocks = false
 
-puts i_am_chris && i_like_beer
-puts i_am_chris && i_eat_rocks
+# puts i_am_chris && i_like_beer
+# puts i_am_chris && i_eat_rocks
 
 #while true 
 #	puts 'What would you like to ask C to do?'
@@ -316,42 +316,42 @@ puts i_am_chris && i_eat_rocks
 #puts names [0]
 #puts names [4]
 
-languages = ['English', 'Norwegian', 'Ruby']
-	languages.each do |lang|
-	puts 'I love ' + lang + '!'
-	puts 'Don\'t you?'
-end
+# languages = ['English', 'Norwegian', 'Ruby']
+# 	languages.each do |lang|
+# 	puts 'I love ' + lang + '!'
+# 	puts 'Don\'t you?'
+# end
 
 
-2.times do 
-	puts '...you can say that again...'
-end
+# 2.times do 
+# 	puts '...you can say that again...'
+# end
 
-foods = ['artichoke', 'brioche', 'caramel']
+# foods = ['artichoke', 'brioche', 'caramel']
 
-puts foods
-puts
-puts foods.to_s
-puts
-puts foods.join( ' , ')
-puts
-puts foods.join(' :) ') + '  8)'
+# puts foods
+# puts
+# puts foods.to_s
+# puts
+# puts foods.join( ' , ')
+# puts
+# puts foods.join(' :) ') + '  8)'
 
-200.times do 
-	puts []
-end
+# 200.times do 
+# 	puts []
+# end
 
-favorites = []
-favorites.push 'raindrops on roses'
-favorites.push 'whiskey on kittens'
+# favorites = []
+# favorites.push 'raindrops on roses'
+# favorites.push 'whiskey on kittens'
 
-puts favorites[0]
-puts favorites.last
-puts favorites.length
+# puts favorites[0]
+# puts favorites.last
+# puts favorites.length
 
-puts favorites.pop
-puts favorites
-puts favorites.length
+# puts favorites.pop
+# puts favorites
+# puts favorites.length
 
 
 # grandma problem again
@@ -462,19 +462,19 @@ puts favorites.length
 
 #### Strangeness
 
-def favorite_food name
-	if name == 'Apples'
-		return 'Erik'
-	end
-	if name == 'Earl Grey'
-		puts 'Jean Luc'
-	end
+# def favorite_food name
+# 	if name == 'Apples'
+# 		return 'Erik'
+# 	end
+# 	if name == 'Earl Grey'
+# 		puts 'Jean Luc'
+# 	end
 
-	'what is this?'
-end
+# 	'what is this?'
+# end
 
-favorite_food ('Apples')
-favorite_food ('Earl Grey')
+# favorite_food ('Apples')
+# favorite_food ('Earl Grey')
 
 #this is an important exercise## PG.80
 
@@ -548,17 +548,17 @@ favorite_food ('Earl Grey')
 
 # using recursion to find a factorial - damn i wish I had grey matter. 
 
- def factorial num
- 	if num <= 1
- 		1
- 	else
- 		num * factorial(num-1)
- 	end
- end
+#  def factorial num
+#  	if num <= 1
+#  		1
+#  	else
+#  		num * factorial(num-1)
+#  	end
+#  end
 
- puts factorial(4)
+#  puts factorial(4)
 
-puts ((4 * 5) * (4 * 3) * (2 * 1))
+# puts ((4 * 5) * (4 * 3) * (2 * 1))
 
 
 		# 1. 6 * 5
@@ -568,20 +568,109 @@ puts ((4 * 5) * (4 * 3) * (2 * 1))
 		# 		    5. 2 * 1
 		# 		     
 
+# have not figured out recursion yet - inability to understand this problem is an example. 
+
+# M = 'land'
+# o = 'water'
+
+# # world = [[o,o,o,o,o,o],
+# # 		 [o,o,M,M,o,o],
+# # 		 [o,o,M,M,o,o],]
+
+# world = [[o,o,o,o,o,o,o,o,o,o,o],
+# 		[o,o,o,o,M,M,o,o,o,o,o],
+# 		[o,o,o,o,o,o,o,o,M,M,o],
+# 		[o,o,o,M,o,o,o,o,o,M,o],
+# 		[o,o,o,M,o,M,M,o,o,o,o],
+# 		[o,o,o,o,M,M,M,M,o,o,o],
+# 		[M,M,M,M,M,M,M,M,M,M,o],
+# 		[o,o,o,M,M,o,M,M,M,o,o],
+# 		[o,o,o,o,o,o,M,M,o,o,o],
+# 		[o,M,o,o,o,M,o,o,o,o,o],
+# 		[o,o,o,o,o,o,o,o,o,o,o]]
+
+
+# def continent_size world, x , y
+# 	if world[y][x] != 'land'
+# 		#either it's water or we already counted it. 
+# 	return 0
+# end
+
+
+# #count the tile 
+# 	size = 1
+# 	world[y][x] = 'counted land'
+
+# 	size = size + continent_size(world, x-1, y-1)
+# 	size = size + continent_size(world, x , y-1)
+# 	size = size + continent_size(world, x+1, y-1)
+# 	size = size + continent_size(world, x-1, y )
+# 	size = size + continent_size(world, x+1, y )
+# 	size = size + continent_size(world, x-1, y+1)
+# 	size = size + continent_size(world, x , y+1)
+# 	size = size + continent_size(world, x+1, y+1)
+# 	size
+# end
+
+# puts continent_size(world, 5, 5)
+
+
+# >>>>> 10.2 Sorting <<<<<< # 
+
+# def some_array 
+# 	recursive_sort some_array, []
+# end
+
+# def recursive_sort unsorted_array, sorted_array
+
+
+# end
+
+# def countdown(n)
+# 	return if n.zero?
+# 	puts n
+# 	countdown (n-1)
+# end
+
+# 	countdown(5)
 
 
 
+# def recursive_sort unsorted_array, sorted_array
+# 	return 1  if unsorted_array == []
+# 	largest = unsorted_array.max
+# 	sorted_array << largest
+# 	unsorted_array = unsorted_array - sorted_array
+# 	# puts sorted_array
+# 	# puts unsorted_array
+# 	recursive_sort unsorted_array, sorted_array
+# end
+
+# recursive_sort [2,1,7,3,4,9], []
+#  unsorted_array = '[2,1,7,3,4,9]'
+#   sorted_array = '[]'
+
+ def append2(n)
+ 	ary = []
+ 	n.downto(0) { |i| ary << i }
+  	puts ary
+ end
+
+ def append(ary,n)
+ 	final = append2(n-1)
+ end
+
+puts append [], 3
 
 
+# def append (ary, n)
+# 	return 0 if n == 0
+# 	ary = ary << n
 
+# 	puts ary
+# end
 
-
-
-
-
-
-
-
+# append [], 4
 
 
 
