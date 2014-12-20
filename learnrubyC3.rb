@@ -650,17 +650,17 @@
 #  unsorted_array = '[2,1,7,3,4,9]'
 #   sorted_array = '[]'
 
- def append2(n)
- 	ary = []
- 	n.downto(0) { |i| ary << i }
-  	puts ary
- end
+#  def append2(n)
+#  	ary = []
+#  	n.downto(0) { |i| ary << i }
+#   	puts ary
+#  end
 
- def append(ary,n)
- 	final = append2(n-1)
- end
+#  def append(ary,n)
+#  	final = append2(n-1)
+#  end
 
-puts append [], 3
+# puts append [], 3
 
 
 # def append (ary, n)
@@ -673,6 +673,21 @@ puts append [], 3
 # append [], 4
 
 
+
+# MORE Exercises 
+
+# 8.3 sorting Arrays
+
+
+arr = []
+arr_count = 0
+
+while arr_count < 5
+	arr.push gets.chomp
+	arr_count += 1
+end
+
+puts arr
 
 
 
