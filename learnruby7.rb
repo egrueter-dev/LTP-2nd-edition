@@ -39,12 +39,11 @@
 #
 
 def factorial(num)
-  if num >= 0
-    factorial(num-1)
-    puts num
+  if num <= 1
+    1
   else
-    false
+    num * factorial(num-1)
   end
 end
 
-factorial(10)
+puts factorial(10)
