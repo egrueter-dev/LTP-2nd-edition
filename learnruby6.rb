@@ -40,8 +40,7 @@
 #
 #   input
 # end
-#
-#
+
 build_array_of_squares = Proc.new do |array|
   last_number = array.last
   if last_number <= 0

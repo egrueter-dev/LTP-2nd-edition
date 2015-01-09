@@ -87,33 +87,46 @@
 
 #<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<#Sorting solution
 
+#
+# def sort arr
+#   rec_sort arr, []
+# end
+#
+#
+# def rec_sort unsorted, sorted
+#   if unsorted.length <= 0
+#     return sorted
+#   end
+#
+# smallest = unsorted.pop
+# still_unsorted = []
+#
+# unsorted.each do |tested_object|
+#   if tested_object < smallest
+#     still_unsorted.push smallest
+#     smallest = tested_object
+#   else
+#     still_unsorted.push tested_object
+#   end
+# end
+#
+# sorted.push smallest
+#
+# rec_sort still_unsorted, sorted
+#
+# end
+#
+# puts(sort(['can','feel','singing','like','a','can']))
 
 def sort arr
-  rec_sort arr, []
-end
-
-
-def rec_sort unsorted, sorted
-  if unsorted.length <= 0
-    return sorted
-  end
-
-smallest = unsorted.pop
-still_unsorted = []
-
-unsorted.each do |tested_object|
-  if tested_object < smallest
-    still_unsorted.push smallest
-    smallest = tested_object
-  else
-    still_unsorted.push tested_object
-  end
-end
-
-sorted.push smallest
-
-rec_sort still_unsorted, sorted
+  return arr if arr.length <= 1
+  middle = arr.pop #WTF! why is that taking all three?
+  puts "middle = #{middle}"
+  less = arr.select {|x| x < middle }
+  puts "less = #{less}"
+  more = arr.select {|x| x >= middle }
+  puts "more = #{more}"
+  sort(less) + [middle] + sort(more)
 
 end
-
-puts(sort(['can','feel','singing','like','a','can']))
+ sort([1,2,1])
