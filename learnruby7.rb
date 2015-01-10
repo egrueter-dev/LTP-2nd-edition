@@ -184,13 +184,23 @@
 # final = First(F[0],M(21),L(f() m(23) l(35)) Middle(45) sort Last(F(59) M(91) L(0))
 
 
-#Checking recursion knowledge.. 
+#Checking recursion knowledge..
 
 def recur(val)
   return val if val <= 0
   value = val * val-1
   puts value
   recur(val-1)
+end
+
+recur(8)
+
+
+def recur(n)
+  return n if n <= 0
+  numer = n * n-1
+  puts numer
+  recur(n-1)
 end
 
 recur(8)
