@@ -118,15 +118,79 @@
 #
 # puts(sort(['can','feel','singing','like','a','can']))
 
-def sort arr
-  return arr if arr.length <= 1
-  middle = arr.pop #WTF! why is that taking all three?
-  puts "middle = #{middle}"
-  less = arr.select {|x| x < middle }
-  puts "less = #{less}"
-  more = arr.select {|x| x >= middle }
-  puts "more = #{more}"
-  sort(less) + [middle] + sort(more)
+# def sort arr
+#   return arr if arr.length <= 1
+#   middle = arr.pop #WTF! why is that taking all three?
+#   puts "middle = #{middle}"
+#   less = arr.select {|x| x < middle }
+#   puts "less = #{less}"
+#   more = arr.select {|x| x >= middle }
+#   puts "more = #{more}"
+#   sort(less) + [middle] + sort(more)
+#
+# end
+#  sort([1,2,1])
 
+
+ # def sort arr
+ #   return arr if arr.length <= 1
+ #
+ #   middle = arr.pop
+ #   less = arr.select {|x| x < middle}
+ #   more = arr.select {|x| x >= middle}
+ #   sort(less) + [middle] + sort(more)
+ # end
+ #
+ # puts sort([143,34,10,2,4,6,11])
+ #
+ #
+
+
+
+# def sort(arr)
+#    return arr if arr.length <= 1
+#    middle = arr.pop
+#    first = arr.select {|x| x < middle }
+#    last = arr.select  {|x| x > middle }
+#    final =  sort(first) + [middle], sort(last)
+#   #  puts "first......#{first}"
+#   #  puts "middle......#{middle}"
+#   #  puts "last.......#{last}"
+#   #  puts "break..."
+# end
+#
+# puts sort([35,59,23,91,21,45])
+
+#
+# # calc
+# [35,59,23,91,21,45]
+#
+# m = 45
+# f = 35,23,21
+# l = 59, 91
+# final = F(35,23,21), M(45), sort(l(59,91))
+#
+# sort(last)
+# m = 91
+# first = 59
+# last = []
+#
+# sort(first)
+# m = 21
+# first = []
+# last = [35, 23]
+#
+#
+# final = First(F[0],M(21),L(f() m(23) l(35)) Middle(45) sort Last(F(59) M(91) L(0))
+
+
+#Checking recursion knowledge.. 
+
+def recur(val)
+  return val if val <= 0
+  value = val * val-1
+  puts value
+  recur(val-1)
 end
- sort([1,2,1])
+
+recur(8)
