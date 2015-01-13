@@ -128,23 +128,23 @@
 # puts do_until_false([5], build_array_of_squares).inspect
 #
 
-## write your own loop to reinforce
+## write your own proc/method combo to reinforce
 
 
-# def do_until_false
-#
-#
-# calc = Proc.new do |array|
-#   last_number = array.last
-#   if last_number <= 0
-#     false
-#   else
-#     array.pop
-#     array.push last_number -1
-#   end
-# end
-#
-# def countdown
-#
-#
-# end
+def fun_stuff(proc_calc,array)
+  last_array = array.pop
+  if array.length < 2
+  proc_calc.call
+  else
+  puts last_array
+  end
+end
+
+
+
+calc_arr = Proc.new do
+  puts "There is only one item in the array, dude"
+end
+
+
+fun_stuff(calc_arr,[1])
