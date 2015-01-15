@@ -9,7 +9,7 @@
 #Array Challenges
 
 #1 Alphabetical order
-array = []
+array = []  
 
 while
   input = gets.chomp.to_s

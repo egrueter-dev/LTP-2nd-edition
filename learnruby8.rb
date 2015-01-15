@@ -17,15 +17,15 @@
 #
 # proc = Proc.new { puts "Hello World"}
 # proc.call
-
-# Lambda Examples
+#
+# #Lambda Examples
 #
 # lam = lambda { |x| puts x * 2 }
 # [1,2,3].each(&lam)
 #
 #  lam = lambda {puts "Hello World"}
 #  lam.call
-#
+k
 
 #Differences between Blocks and Procs
 
@@ -119,9 +119,6 @@
 #Erik's Proc Challenge
 # Create a program that sorts an array by calling a proc on the array if
 # there are more than 1 values inside of it.
-
-
-
 
 
 
