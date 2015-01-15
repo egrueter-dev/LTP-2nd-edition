@@ -97,54 +97,49 @@
 
 #The above code lets you not only do hello, or goodbye, but either or.
 
+## write your own proc/method combo to reinforce
 
-# def do_until_false first_input, some_proc
-#   input = first_input
-#   output = first_input
-#
-# while output
-#   input = output
-#   output = some_proc.call input
-#  end
-#
-#   input
-# end
-#
-# build_array_of_squares = Proc.new do |array|
-#   last_number = array.last
-#   if last_number <= 0
-#     false
+# def fun_stuff(proc_calc,array)
+#   last_array = array.pop
+#   if array.length < 2
+#   proc_calc.call array
 #   else
-#     #take off the last number
-#     array.pop
-#     #and replace it with it's square
-#     array.push last_number * last_number
-#     #followed by the next smallest number
-#     array.push last_number-1
+#   puts last_array
 #   end
 # end
 #
+# calc_arr = Proc.new do
+#   puts "There is only one item in the array, dude"
+# end
 #
-# puts do_until_false([5], build_array_of_squares).inspect
 #
+# fun_stuff(calc_arr,[1])
 
-## write your own proc/method combo to reinforce
+
+#Erik's Proc Challenge
+# Create a program that sorts an array by calling a proc on the array if
+# there are more than 1 values inside of it.
 
 
-def fun_stuff(proc_calc,array)
-  last_array = array.pop
-  if array.length < 2
-  proc_calc.call
+
+
+
+
+
+def sort_array(some_proc, array)
+  if array.length <= 1
+    puts "This array only has one value, dude"
   else
-  puts last_array
+  sort_array(sort array, array)
   end
 end
 
 
 
-calc_arr = Proc.new do
-  puts "There is only one item in the array, dude"
+sort = Proc.new do |array|
+  pivot = array.pop
+  less = array.select {|x| x < pivot}
+  more = array.select {|x| x > pivot}
 end
 
-
-fun_stuff(calc_arr,[1])
+sort_array(sort, [1,2,3])
