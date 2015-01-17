@@ -198,49 +198,51 @@
 #additional challenges
 
 #Orange Tree Challenge
+#
+# class OrangeTree
+#   def initialize
+#     @height = 1
+#     @age = 0
+#     @oranges = 0
+#     puts "A new orange tree has sprouted"
+#   end
+#
+#   def one_year_passes
+#     @age = @age + 1
+#     @height = @height + 1
+#     if @age < 4
+#        @oranges = @oranges + 1
+#     elsif @age > 4
+#        @oranges = @oranges + 10
+#     elsif @age > 10
+#       puts "orange tree has died :("
+#       exit
+#     end
+#   end
+#
+#   def height
+#     puts "The height of the tree is #{@height}"
+#   end
+#
+#   def pick_an_orange(picks)
+#     @oranges = @oranges - picks.to_i
+#     puts "You picked #{picks} oranges off the tree"
+#     if @oranges == 0
+#       puts "You ate all the oranges"
+#     end
+#   end
+#
+#   def count_the_oranges
+#       puts "The number of oranges is #{@oranges}"
+#   end
+#
+# end
+#
+# happy_tree = OrangeTree.new
+# 7.times do happy_tree.one_year_passes end
+# happy_tree.height
+# happy_tree.count_the_oranges
+# happy_tree.pick_an_orange(10)
+# happy_tree.count_the_oranges
 
-class OrangeTree
-  def initialize
-    @height = 1
-    @age = 0
-    @oranges = 0
-    puts "A new orange tree has sprouted"
-  end
-
-  def one_year_passes
-    @age = @age + 1
-    @height = @height + 1
-    if @age < 4
-       @oranges = @oranges + 1
-    elsif @age > 4
-       @oranges = @oranges + 10
-    elsif @age > 10
-      puts "orange tree has died :("
-      exit
-    end
-  end
-
-  def height
-    puts "The height of the tree is #{@height}"
-  end
-
-  def pick_an_orange(picks)
-    @oranges = @oranges - picks.to_i
-    puts "You picked #{picks} oranges off the tree"
-    if @oranges == 0
-      puts "You ate all the oranges"
-    end
-  end
-
-  def count_the_oranges
-      puts "The number of oranges is #{@oranges}"
-  end
-
-end
-
-happy_tree = OrangeTree.new
-7.times do happy_tree.one_year_passes end
-happy_tree.height
-happy_tree.count_the_oranges
-happy_tree.pick_an_orange(10)
-happy_tree.count_the_oranges
+#interactive baby dragon
